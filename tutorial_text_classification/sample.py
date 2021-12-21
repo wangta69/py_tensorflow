@@ -22,19 +22,13 @@ partial_x_train = train_data[10000:]
 y_val = train_labels[:10000]
 partial_y_train = train_labels[10000:]
 
-
-
 url = "https://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz"
 dataset = tf.keras.utils.get_file("aclImdb_v1", url,
                                     untar=True, cache_dir='.',
                                     cache_subdir='')
 
-print(os.path.dirname(dataset))
-exit()
 dataset_dir = os.path.join(os.path.dirname(dataset), 'aclImdb')
-
 os.listdir(dataset_dir)
-
 train_dir = os.path.join(dataset_dir, 'train')
 os.listdir(train_dir)
 
@@ -143,8 +137,6 @@ model.compile(loss=losses.BinaryCrossentropy(from_logits=True),
 #
 # y_val = train_labels[:10000]
 # partial_y_train = train_labels[10000:]
-
-
 
 history = model.fit(partial_x_train,
                     partial_y_train,
