@@ -1,5 +1,16 @@
 # tensorflow 이야기
 
+## 기본
+### 모델종류
+[설명](basic/model.md)
+### keras
+[설명](basic/keras.md)
+### activaion functions
+[설명](basic/activation.md)
+
+## 케라스 샘플
+https://tensorflow.blog/케라스-딥러닝 참조
+
 ## 패키지 인스톨
 ```
  pip install numpy
