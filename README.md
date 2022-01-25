@@ -9,7 +9,8 @@
 [설명](basic/activation.md)
 
 ## 케라스 샘플
-https://tensorflow.blog/케라스-딥러닝 참조
+https://tensorflow.blog/케라스-딥러닝 참조 \
+[movie review](keras_sample/movie_review.md)
 
 ## 패키지 인스톨
 ```
